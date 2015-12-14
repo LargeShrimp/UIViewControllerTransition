@@ -13,6 +13,8 @@
 		845C71891C1E5DD2009F99E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C71871C1E5DD2009F99E4 /* Main.storyboard */; };
 		845C718B1C1E5DD2009F99E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 845C718A1C1E5DD2009F99E4 /* Assets.xcassets */; };
 		845C718E1C1E5DD2009F99E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 845C718C1C1E5DD2009F99E4 /* LaunchScreen.storyboard */; };
+		845C71971C1E5F5B009F99E4 /* PresentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C71961C1E5F5B009F99E4 /* PresentViewController.m */; };
+		845C719A1C1E6C0E009F99E4 /* RotationAniamtionTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 845C71991C1E6C0E009F99E4 /* RotationAniamtionTransition.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		845C718A1C1E5DD2009F99E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		845C718D1C1E5DD2009F99E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		845C718F1C1E5DD2009F99E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		845C71951C1E5F5B009F99E4 /* PresentViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentViewController.h; sourceTree = "<group>"; };
+		845C71961C1E5F5B009F99E4 /* PresentViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentViewController.m; sourceTree = "<group>"; };
+		845C71981C1E6C0E009F99E4 /* RotationAniamtionTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RotationAniamtionTransition.h; sourceTree = "<group>"; };
+		845C71991C1E6C0E009F99E4 /* RotationAniamtionTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RotationAniamtionTransition.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				845C71821C1E5DD2009F99E4 /* AppDelegate.m */,
 				845C71841C1E5DD2009F99E4 /* ViewController.h */,
 				845C71851C1E5DD2009F99E4 /* ViewController.m */,
+				845C71951C1E5F5B009F99E4 /* PresentViewController.h */,
+				845C71961C1E5F5B009F99E4 /* PresentViewController.m */,
+				845C71981C1E6C0E009F99E4 /* RotationAniamtionTransition.h */,
+				845C71991C1E6C0E009F99E4 /* RotationAniamtionTransition.m */,
 				845C71871C1E5DD2009F99E4 /* Main.storyboard */,
 				845C718A1C1E5DD2009F99E4 /* Assets.xcassets */,
 				845C718C1C1E5DD2009F99E4 /* LaunchScreen.storyboard */,
@@ -151,7 +161,9 @@
 			files = (
 				845C71861C1E5DD2009F99E4 /* ViewController.m in Sources */,
 				845C71831C1E5DD2009F99E4 /* AppDelegate.m in Sources */,
+				845C71971C1E5F5B009F99E4 /* PresentViewController.m in Sources */,
 				845C71801C1E5DD2009F99E4 /* main.m in Sources */,
+				845C719A1C1E6C0E009F99E4 /* RotationAniamtionTransition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,6 +312,7 @@
 				845C71941C1E5DD2009F99E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

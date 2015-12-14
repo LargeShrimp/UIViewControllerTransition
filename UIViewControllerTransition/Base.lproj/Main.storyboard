@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,92 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTP-GH-Nxm">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="点击开始"/>
+                                <connections>
+                                    <segue destination="lbG-04-bED" kind="show" id="eXD-Ve-eTc"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.62172834629999996" blue="0.06799526048" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="yTP-GH-Nxm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8kP-xK-s2Y"/>
+                            <constraint firstItem="yTP-GH-Nxm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="clc-Uq-oGa"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="yTP-GH-Nxm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="8kP-xK-s2Y"/>
+                                <exclude reference="clc-Uq-oGa"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="yTP-GH-Nxm"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="8kP-xK-s2Y"/>
+                                <include reference="clc-Uq-oGa"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-495" y="253.5"/>
+        </scene>
+        <!--Present View Controller-->
+        <scene sceneID="QnF-db-9Ws">
+            <objects>
+                <viewController id="lbG-04-bED" customClass="PresentViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="D6K-hM-Qmo"/>
+                        <viewControllerLayoutGuide type="bottom" id="iDh-ge-NBA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="85C-p6-LkR">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jLQ-Hm-9NQ">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="点击关闭"/>
+                                <connections>
+                                    <action selector="dismissvc:" destination="lbG-04-bED" eventType="touchUpInside" id="NaK-bR-9Td"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.75294117650000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jLQ-Hm-9NQ" firstAttribute="centerY" secondItem="85C-p6-LkR" secondAttribute="centerY" id="63L-ea-QGJ"/>
+                            <constraint firstItem="jLQ-Hm-9NQ" firstAttribute="centerX" secondItem="85C-p6-LkR" secondAttribute="centerX" id="Y5V-5x-cTh"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="jLQ-Hm-9NQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="63L-ea-QGJ"/>
+                                <exclude reference="Y5V-5x-cTh"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="jLQ-Hm-9NQ"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="63L-ea-QGJ"/>
+                                <include reference="Y5V-5x-cTh"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Set-UJ-wt3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="187.5" y="253.5"/>
         </scene>
     </scenes>
 </document>
